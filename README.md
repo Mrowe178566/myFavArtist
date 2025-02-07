@@ -16,9 +16,5 @@ SpotifyStatsHub is a web application designed to provide detailed statistics abo
 - **Spotify Developer Account**
 
 
-```ruby
-configure do
-  # setup a database connection
-  set(:database, { adapter: "sqlite3", database: "db/development.sqlite3" })
-end
+
 ```
