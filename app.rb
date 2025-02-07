@@ -1,6 +1,6 @@
 require "sinatra"
 require "dotenv/load"
-require "sinatra-contrib"
+require "sinatra/contrib"
 require "rspotify"
 
 RSpotify.authenticate(ENV["SPOTIFY_CLIENT_ID"], ENV["SPOTIFY_CLIENT_SECRET"])
