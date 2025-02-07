@@ -1,0 +1,15 @@
+<h1>Search Results</h1>
+<% if @artists.empty? %>
+  <p>No artists found.</p>
+<% else %>
+  <ul>
+    <% @artists.each do |artist| %>
+      <li>
+        <strong>Name:</strong> <%= artist.name %><br>
+        <strong>Followers:</strong> <%= artist.followers['total'] %><br>
+        <strong>Genres:</strong> <%= artist.genres.join(', ') %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+<a href="/">New Search</a>
