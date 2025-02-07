@@ -11,7 +11,7 @@ SpotifyStatsHub is a web application designed to provide detailed statistics abo
 **Getting Started**
 
 **Prerequisites**  
-- **Ruby (version 3.4.1,)**  
+- **Ruby (version 2.5 or higher)**  
 - **Sinatra**  
 - **Spotify Developer Account**
 
