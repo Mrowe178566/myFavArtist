@@ -2,14 +2,17 @@
 <% if @artists.empty? %>
   <p>No artists found.</p>
 <% else %>
-  <ul>
+  <div class="grid-container">
     <% @artists.each do |artist| %>
-      <li>
+      <div class="grid-item">
         <strong>Name:</strong> <%= artist.name %><br>
         <strong>Followers:</strong> <%= artist.followers['total'] %><br>
         <strong>Genres:</strong> <%= artist.genres.join(', ') %>
-      </li>
+      </div>
     <% end %>
-  </ul>
+  </div>
 <% end %>
-<a href="/">New Search</a>
+<div class="footer">
+  <a href="/" class="new-search">New Search</a>
+</div>
+

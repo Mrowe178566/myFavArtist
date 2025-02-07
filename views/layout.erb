@@ -1,20 +1,57 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Artist Spotify statistics</title>
-  <style>
-    html, body {
-      min-height: 100%;
-      padding-top: 40px;
-      padding-bottom: 40px;
-      background: linear-gradient(90deg, #003f5b, #2b4b7d, #5f5195, #98509d, #cc4c91, #f25375, #ff6f4e, #ff9913);
-      color: white;
-    }
-  </style>
-</head>
-<body>
-  <%= yield %>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpotifyStatsHub</title>
+    <style>
+      html, body {
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+        background: black;
+        color: lightgreen;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+
+      .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image-row {
+        margin-bottom: 20px;
+      }
+
+      .thumbnail {
+        width: 400px;  
+        height: 400px; 
+        object-fit: cover;
+      }
+
+      .new-search {
+        color: limegreen;  /
+        text-decoration: none;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="image-row">
+        <img src="/thumbnails/bars.jpg" alt="Site Thumbnail" class="thumbnail">
+      </div>
+      <%= yield %>
+    </div>
+  </body>
 </html>
